@@ -2,7 +2,7 @@ import * as multisig from '@sqds/multisig';
 // top level
 import { useMutation, useQueryClient, useSuspenseQuery } from '@tanstack/react-query';
 
-const DEFAULT_RPC_URL = 'https://api.mainnet-beta.solana.com'; // Default fallback
+const DEFAULT_RPC_URL = 'http://127.0.0.1:8899'; // Default fallback
 
 const getRpcUrl = () => {
   if (typeof document !== 'undefined') {
